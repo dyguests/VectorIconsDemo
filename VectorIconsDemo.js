@@ -7,6 +7,7 @@ import {
     StyleSheet,
     View,
     Text,
+    TouchableOpacity,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -18,7 +19,9 @@ export default class VectorIconsDemo extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>Hello React Native VectorIconsDemo</Text>
-                {myIcon}
+                <TouchableOpacity>
+                    {myIcon}
+                </TouchableOpacity>
             </View>
         );
     }
