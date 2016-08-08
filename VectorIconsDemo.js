@@ -8,12 +8,17 @@ import {
     View,
     Text,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+const myIcon = (<Icon name="rocket" size={30} color="#900"/>)
+
 
 export default class VectorIconsDemo extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>Hello React Native VectorIconsDemo</Text>
+                {myIcon}
             </View>
         );
     }
